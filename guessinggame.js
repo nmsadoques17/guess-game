@@ -4,7 +4,7 @@ var totalTurns = 0; // dosen't reset on loop
 var turns = 0; // reset on loop
 var games = 0;
 var average = 0;
-var playAgain = "y";
+var playAgain = 'y';
 
 //alert("totalTurns= "+totalTurns+" games= "+games+" average= "+average+" playAgain= "+playAgain);
 do{
@@ -17,12 +17,12 @@ do{
 			guess= prompt("Please enter a guess from number 1 through 100.");
 			if (isNaN(guess)){
 				playAgain= prompt("would you like keep playing? y=Yes");
-				if(playAgain !== "y"){
+				if(playAgain !== 'y'){
 					break;
 				}
 			}
 		}
-		while (isNaN(guess) = false)
+		while (isNaN(guess)==false);
 		turns++;
 		totalTurns++;
 		if (guess < Answer){//guess is lower than Answer
